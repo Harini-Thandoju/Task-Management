@@ -43,14 +43,14 @@ const generateTaskCard = ({id, url, title, type, description}) => {
 }
 
 const saveToLocalStorage = () => {
-    localStorage.setItem("nikhiltasks", JSON.stringify({nikhil: globalTaskData}));
+    localStorage.setItem("HariniTasks", JSON.stringify({Harini: globalTaskData}));
 }
 
 const reloadTaskCard = () => {
-    const localStorageCopy = JSON.parse(localStorage.getItem("nikhiltasks"));
+    const localStorageCopy = JSON.parse(localStorage.getItem("HariniTasks"));
     console.log(localStorageCopy);
     if(localStorageCopy) {
-        globalTaskData = localStorageCopy["nikhil"];
+        globalTaskData = localStorageCopy["Harini"];
     }
     console.log(globalTaskData)
     globalTaskData.map((cardData) => {
